@@ -1,0 +1,21 @@
+max = None
+min = None
+while True :
+    string_value = input('Enter a Number: ')
+    if string_value == 'done':
+        break
+    try:
+        int_value = int(string_value)
+        if min == None :
+            min = int_value
+        if max == None :
+            max = int_value
+        if int_value >= max:
+            max = int_value
+        elif int_value <= min:
+            min = int_value
+    except:
+        print('Invalid input')
+        continue
+print('Maximum is', max)
+print('Minimum is', min)
