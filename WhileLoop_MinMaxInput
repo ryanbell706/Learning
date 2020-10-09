@@ -8,9 +8,8 @@ while True :
         int_value = int(string_value)
         if min == None :
             min = int_value
-        if max == None :
             max = int_value
-        if int_value >= max:
+        elif int_value >= max:
             max = int_value
         elif int_value <= min:
             min = int_value
