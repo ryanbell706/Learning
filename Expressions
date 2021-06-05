@@ -1,0 +1,14 @@
+# 3x^3 - 2x^2 + 3x - 1 [Long-form: 3x(cubed) minus 2x(squared) plus 3x minus 1]
+
+#change the value of the x axis by altering -1 to any number in line 6 of code
+#the y output is resultant to the top equation; it evaluates the expression in line 1
+
+x = float(-1)
+y = (3 * (x ** 3)) - (2 * (x ** 2)) + (3 * x) - 1
+print("y =", y)
+
+#the code can be altered to float an input from the user, rather than requiring the value of -1 to be changed
+
+x = float(input("Type the value of x: "))
+y = (3 * (x ** 3)) - (2 * (x ** 2)) + (3 * x) - 1
+print("y =", y)
